@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Etna_Business</id>
+    <version>1.0.0</version>
+    <authors>Etna_Business</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="5d565d1cf653056a1d31b104604530cb5d19d78c" />
+    <dependencies>
+      <group targetFramework="net6.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Juani\Desktop\Etna-TechnicalTest\Business\bin\Debug\net6.0\Etna_Business.dll" target="lib\net6.0\Etna_Business.dll" />
+  </files>
+</package>

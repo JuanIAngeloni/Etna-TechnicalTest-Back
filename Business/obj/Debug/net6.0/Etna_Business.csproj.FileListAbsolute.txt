@@ -1,0 +1,16 @@
+C:\Users\Juani\Desktop\Etna-TechnicalTest\Business\bin\Debug\net6.0\Etna_Business.deps.json
+C:\Users\Juani\Desktop\Etna-TechnicalTest\Business\bin\Debug\net6.0\Etna_Business.dll
+C:\Users\Juani\Desktop\Etna-TechnicalTest\Business\bin\Debug\net6.0\Etna_Business.pdb
+C:\Users\Juani\Desktop\Etna-TechnicalTest\Business\obj\Debug\net6.0\Etna_Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Juani\Desktop\Etna-TechnicalTest\Business\obj\Debug\net6.0\Etna_Business.AssemblyInfoInputs.cache
+C:\Users\Juani\Desktop\Etna-TechnicalTest\Business\obj\Debug\net6.0\Etna_Business.AssemblyInfo.cs
+C:\Users\Juani\Desktop\Etna-TechnicalTest\Business\obj\Debug\net6.0\Etna_Business.csproj.CoreCompileInputs.cache
+C:\Users\Juani\Desktop\Etna-TechnicalTest\Business\obj\Debug\net6.0\Etna_Business.sourcelink.json
+C:\Users\Juani\Desktop\Etna-TechnicalTest\Business\obj\Debug\net6.0\Etna_Business.dll
+C:\Users\Juani\Desktop\Etna-TechnicalTest\Business\obj\Debug\net6.0\refint\Etna_Business.dll
+C:\Users\Juani\Desktop\Etna-TechnicalTest\Business\obj\Debug\net6.0\Etna_Business.pdb
+C:\Users\Juani\Desktop\Etna-TechnicalTest\Business\obj\Debug\net6.0\ref\Etna_Business.dll
+C:\Users\Juani\Desktop\Etna-TechnicalTest\Business\obj\Debug\net6.0\Etna_Business.csproj.AssemblyReference.cache
+C:\Users\Juani\Desktop\Etna-TechnicalTest\Business\bin\Debug\net6.0\Etna_Data.dll
+C:\Users\Juani\Desktop\Etna-TechnicalTest\Business\bin\Debug\net6.0\Etna_Data.pdb
+C:\Users\Juani\Desktop\Etna-TechnicalTest\Business\obj\Debug\net6.0\Etna_Business.csproj.CopyComplete
