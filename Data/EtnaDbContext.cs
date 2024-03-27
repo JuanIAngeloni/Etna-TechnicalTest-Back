@@ -32,6 +32,11 @@ namespace Etna_Data
 
         public DbSet<TaskEntity> Tasks { get; set; }
 
+        public async Task<List<TaskEntity>> GetTaskList()
+        { 
+            return await Tasks.ToListAsync();
+        }
+
         public async Task<TaskEntity> GetTaskById(int taskId)
         {
             TaskEntity entityEntry = await Tasks.FindAsync(taskId);

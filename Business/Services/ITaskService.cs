@@ -12,5 +12,6 @@ namespace Etna_Business.Services
             Task<TaskRegisterModel> RegisterTask(TaskRegisterModel taskRegisterModel);
             Task<TaskRegisterModel> UpdateTask(TaskRegisterModel taskRegisterModel);
             Task<TaskUpdateModel> GetTaskById(int id);
+            Task<List<TaskUpdateModel>> GetAllTasks();
     }
 }

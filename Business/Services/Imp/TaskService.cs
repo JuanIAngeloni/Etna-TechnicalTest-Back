@@ -82,6 +82,22 @@ namespace Etna_Business.Services.Imp
             }
         }
 
+        public async Task<List<TaskUpdateModel>> GetAllTasks()
+        {
+            try
+            {
+                List<TaskEntity> taskEntityList = await _context.GetTaskList();
+
+                List<TaskUpdateModel> taskUpdateModelList = _mapper.Map<List<TaskUpdateModel>>(taskEntityList);
+
+                return taskUpdateModelList;
+            }
+            catch (Exception ex)
+            {
+                throw new ApiException($"Error en la obtención de la lista de tareas: {ex.Message}");
+            }
+        }
+
 
 
         public void TaskValidator(TaskRegisterModel taskToValidate)
