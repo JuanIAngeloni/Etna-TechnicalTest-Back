@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EtnaTechnicalTestAPI", "EtnaTechnicalTestAPI.csproj", "{296D3CAE-E73D-494B-8E44-5444E736A800}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3052C7F6-E0FE-4E7E-BC50-2FA399F9D714} = {3052C7F6-E0FE-4E7E-BC50-2FA399F9D714}
+		{314BE33B-35F6-415C-859F-4EDC3076ACA8} = {314BE33B-35F6-415C-859F-4EDC3076ACA8}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{4D9FD803-3A57-4125-938B-293BC369E634}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{A3876513-E227-4B18-B9EC-90E1FB6BCEFD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Etna_Business", "..\Business\Etna_Business.csproj", "{314BE33B-35F6-415C-859F-4EDC3076ACA8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Etna_Data", "..\Data\Etna_Data.csproj", "{3052C7F6-E0FE-4E7E-BC50-2FA399F9D714}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{296D3CAE-E73D-494B-8E44-5444E736A800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{296D3CAE-E73D-494B-8E44-5444E736A800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{296D3CAE-E73D-494B-8E44-5444E736A800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{296D3CAE-E73D-494B-8E44-5444E736A800}.Release|Any CPU.Build.0 = Release|Any CPU
+		{314BE33B-35F6-415C-859F-4EDC3076ACA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{314BE33B-35F6-415C-859F-4EDC3076ACA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{314BE33B-35F6-415C-859F-4EDC3076ACA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{314BE33B-35F6-415C-859F-4EDC3076ACA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3052C7F6-E0FE-4E7E-BC50-2FA399F9D714}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3052C7F6-E0FE-4E7E-BC50-2FA399F9D714}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3052C7F6-E0FE-4E7E-BC50-2FA399F9D714}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3052C7F6-E0FE-4E7E-BC50-2FA399F9D714}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{314BE33B-35F6-415C-859F-4EDC3076ACA8} = {4D9FD803-3A57-4125-938B-293BC369E634}
+		{3052C7F6-E0FE-4E7E-BC50-2FA399F9D714} = {A3876513-E227-4B18-B9EC-90E1FB6BCEFD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E6666FE-18B6-4A6F-848C-35B51F3489C1}
+	EndGlobalSection
+EndGlobal
