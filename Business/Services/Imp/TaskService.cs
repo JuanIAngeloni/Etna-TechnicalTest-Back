@@ -88,7 +88,16 @@ namespace Etna_Business.Services.Imp
             {
                 List<TaskEntity> taskEntityList = await _context.GetTaskList();
 
-                List<TaskUpdateModel> taskUpdateModelList = _mapper.Map<List<TaskUpdateModel>>(taskEntityList);
+                List<TaskUpdateModel> taskUpdateModelList = new List<TaskUpdateModel>();
+
+                foreach (var taskEntity in taskEntityList)
+                {
+                    taskEntity.category = await _context.GetCategoryById(taskEntity.categoryId);
+
+                    TaskUpdateModel taskUpdateModel = _mapper.Map<TaskUpdateModel>(taskEntity);
+
+                    taskUpdateModelList.Add(taskUpdateModel);
+                }
 
                 return taskUpdateModelList;
             }
@@ -97,6 +106,23 @@ namespace Etna_Business.Services.Imp
                 throw new ApiException($"Error en la obtención de la lista de tareas: {ex.Message}");
             }
         }
+
+        public async Task<TaskUpdateModel> DeleteUpdateTask(int id)
+        {
+            try
+            {
+                TaskEntity taskEntityDeleteUpdate = await _context.DeleteUpdateTask(id);
+
+                TaskUpdateModel taskUpdateModel = _mapper.Map<TaskUpdateModel>(taskEntityDeleteUpdate);
+
+                return taskUpdateModel;
+            }
+            catch (Exception ex)
+            {
+                throw new ApiException($"Error en el borrado de la tarea: {ex.Message}");
+            }
+        }
+
 
 
 

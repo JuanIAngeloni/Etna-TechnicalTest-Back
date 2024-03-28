@@ -33,7 +33,7 @@ namespace Etna_Data
         public DbSet<TaskEntity> Tasks { get; set; }
 
         public async Task<List<TaskEntity>> GetTaskList()
-        { 
+        {
             return await Tasks.ToListAsync();
         }
 
@@ -99,6 +99,31 @@ namespace Etna_Data
                 if (category != null)
                 {
                     existingTask.category = category;
+                }
+
+                await SaveChangesAsync();
+
+                return existingTask;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public async Task<TaskEntity> DeleteUpdateTask(int taskId)
+        {
+            TaskEntity existingTask = await GetTaskById(taskId);
+
+            if (existingTask != null)
+            {
+                if (existingTask.isDeleted == true)
+                {
+                    existingTask.isDeleted = false;
+                }
+                else
+                {
+                    existingTask.isDeleted = true;
                 }
 
                 await SaveChangesAsync();
