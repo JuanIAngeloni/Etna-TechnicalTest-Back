@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-
 using Etna_Data;
 using Etna_Data.Entities;
 using Etna_Data.Models;

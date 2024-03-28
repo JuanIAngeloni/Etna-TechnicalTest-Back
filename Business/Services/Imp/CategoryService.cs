@@ -3,7 +3,6 @@ using Etna_Data;
 using Etna_Data.Entities;
 using Etna_Data.Models;
 using gringotts_application.Exceptions;
-using Microsoft.EntityFrameworkCore;
 
 namespace Etna_Business.Services.Imp
 {

@@ -3,11 +3,6 @@ using Etna_Data;
 using Etna_Data.Entities;
 using Etna_Data.Models;
 using gringotts_application.Exceptions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Etna_Business.Services.Imp
 {
@@ -66,27 +61,12 @@ namespace Etna_Business.Services.Imp
 
         }
 
-        public async Task<TaskUpdateModel> GetTaskById(int id)
+
+        public async Task<List<TaskUpdateModel>> GetAllTasksByUser(TaskFilterModel taskFilterModel, int userId)
         {
             try
             {
-                TaskEntity taskEntity = await _context.GetTaskById(id);
-
-                TaskUpdateModel taskUpdateModel= _mapper.Map<TaskUpdateModel>(taskEntity);
-
-                return taskUpdateModel;
-            }
-            catch (Exception ex)
-            {
-                throw new ApiException($"Error en la obtención de la categoría: {ex.Message}");
-            }
-        }
-
-        public async Task<List<TaskUpdateModel>> GetAllTasks()
-        {
-            try
-            {
-                List<TaskEntity> taskEntityList = await _context.GetTaskList();
+                List<TaskEntity> taskEntityList = await _context.GetTaskList(taskFilterModel, userId);
 
                 List<TaskUpdateModel> taskUpdateModelList = new List<TaskUpdateModel>();
 
@@ -104,6 +84,22 @@ namespace Etna_Business.Services.Imp
             catch (Exception ex)
             {
                 throw new ApiException($"Error en la obtención de la lista de tareas: {ex.Message}");
+            }
+        }
+
+        public async Task<TaskUpdateModel> UpdateIsCompletedTask(int id)
+        {
+            try
+            {
+                TaskEntity taskEntityUpdated = await _context.UpdateIsCompleteTask(id);
+
+                TaskUpdateModel taskUpdatedModel = _mapper.Map<TaskUpdateModel>(taskEntityUpdated);
+
+                return taskUpdatedModel;
+            }
+            catch (Exception ex)
+            {
+                throw new ApiException($"Error en el completado de la tarea: {ex.Message}");
             }
         }
 
@@ -150,5 +146,7 @@ namespace Etna_Business.Services.Imp
                 throw new ApiException(msg);
             }
         }
+
+
     }
 }

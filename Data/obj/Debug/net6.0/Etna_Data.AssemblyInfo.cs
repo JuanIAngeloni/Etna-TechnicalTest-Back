@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Etna_Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4a1b4da356549082d550639d8fe70a1a671301b2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95b2171d880c31f0bef87a40647255eead8bf634")]
 [assembly: System.Reflection.AssemblyProductAttribute("Etna_Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Etna_Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

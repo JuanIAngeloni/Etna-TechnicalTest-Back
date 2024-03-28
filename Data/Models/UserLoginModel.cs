@@ -1,5 +1,4 @@
-﻿
-namespace Etna_Data.Models
+﻿namespace Etna_Data.Models
 {
     public class UserLoginModel
     {

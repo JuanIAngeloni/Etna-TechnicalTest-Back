@@ -1,7 +1,7 @@
 ﻿using Etna_Data.Entities;
+using Etna_Data.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
-using System.Threading.Tasks;
 
 
 namespace Etna_Data
@@ -9,6 +9,7 @@ namespace Etna_Data
     public class EtnaDbContext : DbContext
     {
         public EtnaDbContext(DbContextOptions<EtnaDbContext> options) : base(options) { }
+
 
         public DbSet<UserEntity> Users { get; set; }
 
@@ -30,22 +31,41 @@ namespace Etna_Data
             return userLogged;
         }
 
+
+
         public DbSet<TaskEntity> Tasks { get; set; }
 
-        public async Task<List<TaskEntity>> GetTaskList()
+        public async Task<List<TaskEntity>> GetTaskList(TaskFilterModel taskFilterModel, int userId)
         {
-            return await Tasks.ToListAsync();
-        }
+            var query = Tasks.AsQueryable();
 
-        public async Task<TaskEntity> GetTaskById(int taskId)
-        {
-            TaskEntity entityEntry = await Tasks.FindAsync(taskId);
-
-            if (entityEntry != null)
+            if (taskFilterModel != null)
             {
-                entityEntry.category = await GetCategoryById(entityEntry.categoryId);
+                query = query.Where(task => task.userId == userId);
+                query = query.Where(task => !task.isDeleted);
+
+                if (taskFilterModel.taskId.HasValue)
+                {
+                    query = query.Where(task => task.taskId == taskFilterModel.taskId);
+                }
+
+                if (!string.IsNullOrEmpty(taskFilterModel.text))
+                {
+                    string searchText = taskFilterModel.text.ToLower();
+                    query = query.Where
+                        (task => task.title.ToLower().Contains(searchText) 
+                        || task.description.ToLower().Contains(searchText) 
+                        || task.category.name.ToLower().Contains(searchText));
+                }
+
+                if (taskFilterModel.isCompleted.HasValue)
+                {
+                    query = query.Where(task => task.isCompleted == taskFilterModel.isCompleted);
+                }
             }
-            return entityEntry;
+            query = query.OrderByDescending(task => task.createDate);
+
+            return await query.ToListAsync();
         }
 
         public async Task<TaskEntity> SaveNewTask(TaskEntity taskToSave)
@@ -110,10 +130,36 @@ namespace Etna_Data
                 return null;
             }
         }
+        public async Task<TaskEntity> UpdateIsCompleteTask(int taskId)
+        {
+            TaskEntity existingTask = await Tasks.FindAsync(taskId);
+
+            if (existingTask != null)
+            {
+                if (existingTask.isCompleted == true)
+                {
+                    existingTask.isCompleted = false;
+                }
+                else
+                {
+                    existingTask.isCompleted = true;
+                }
+
+                await SaveChangesAsync();
+
+                return existingTask;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+
 
         public async Task<TaskEntity> DeleteUpdateTask(int taskId)
         {
-            TaskEntity existingTask = await GetTaskById(taskId);
+            TaskEntity existingTask = await Tasks.FindAsync(taskId);
 
             if (existingTask != null)
             {
