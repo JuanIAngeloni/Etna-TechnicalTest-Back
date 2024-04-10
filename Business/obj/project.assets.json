@@ -852,17 +852,17 @@
           }
         }
       },
-      "Etna_Data/1.0.0": {
+      "TaskManager_Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.28"
         },
         "compile": {
-          "bin/placeholder/Etna_Data.dll": {}
+          "bin/placeholder/TaskManager_Data.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Etna_Data.dll": {}
+          "bin/placeholder/TaskManager_Data.dll": {}
         }
       }
     }
@@ -2340,17 +2340,17 @@
         "version.txt"
       ]
     },
-    "Etna_Data/1.0.0": {
+    "TaskManager_Data/1.0.0": {
       "type": "project",
-      "path": "../Data/Etna_Data.csproj",
-      "msbuildProject": "../Data/Etna_Data.csproj"
+      "path": "../Data/TaskManager_Data.csproj",
+      "msbuildProject": "../Data/TaskManager_Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "AutoMapper >= 13.0.1",
-      "Etna_Data >= 1.0.0",
-      "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.28"
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.28",
+      "TaskManager_Data >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2359,11 +2359,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Juani\\Desktop\\Etna-TechnicalTest\\Business\\Etna_Business.csproj",
-      "projectName": "Etna_Business",
-      "projectPath": "C:\\Users\\Juani\\Desktop\\Etna-TechnicalTest\\Business\\Etna_Business.csproj",
+      "projectUniqueName": "C:\\Users\\Juani\\Desktop\\Task Manager\\Task-Manager-Back\\Business\\TaskManager_Business.csproj",
+      "projectName": "TaskManager_Business",
+      "projectPath": "C:\\Users\\Juani\\Desktop\\Task Manager\\Task-Manager-Back\\Business\\TaskManager_Business.csproj",
       "packagesPath": "C:\\Users\\Juani\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Juani\\Desktop\\Etna-TechnicalTest\\Business\\obj\\",
+      "outputPath": "C:\\Users\\Juani\\Desktop\\Task Manager\\Task-Manager-Back\\Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Juani\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2380,8 +2380,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Juani\\Desktop\\Etna-TechnicalTest\\Data\\Etna_Data.csproj": {
-              "projectPath": "C:\\Users\\Juani\\Desktop\\Etna-TechnicalTest\\Data\\Etna_Data.csproj"
+            "C:\\Users\\Juani\\Desktop\\Task Manager\\Task-Manager-Back\\Data\\TaskManager_Data.csproj": {
+              "projectPath": "C:\\Users\\Juani\\Desktop\\Task Manager\\Task-Manager-Back\\Data\\TaskManager_Data.csproj"
             }
           }
         }

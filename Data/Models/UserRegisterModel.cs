@@ -1,4 +1,4 @@
-﻿namespace Etna_Data.Models
+﻿namespace Task_Manager.Models
 {
     public class UserRegisterModel
     {

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Etna_Data.Entities
+namespace Task_Manager.Entities
 {
     public class UserEntity
     {

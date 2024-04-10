@@ -1,6 +1,5 @@
-﻿using Etna_Data;
-using Etna_Data.Models;
-using gringotts_application.Exceptions;
+﻿using Task_Manager.Models;
+using Task_Manager.Exceptions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
@@ -9,15 +8,15 @@ using System.Security.Cryptography;
 using System.Text;
 
 
-namespace Etna_Business.Services.Imp
+namespace Task_Manager.Services.Imp
 {
     public class AuthService : IAuthService
     {
-        private readonly EtnaDbContext _context;
+        private readonly TaskManagerDbContext _context;
         private readonly IConfiguration _configuration;
         private readonly string _salt;
 
-        public AuthService(EtnaDbContext context, IConfiguration configuration)
+        public AuthService(TaskManagerDbContext context, IConfiguration configuration)
         {
             _context = context;
             _configuration = configuration;
@@ -96,11 +95,12 @@ namespace Etna_Business.Services.Imp
 
         public async Task<bool> ValidatedToken(string token)
         {
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.UTF8.GetBytes(_configuration.GetSection("AuthenticationSettings:SigningKey").Value);
-
             try
             {
+                var tokenHandler = new JwtSecurityTokenHandler();
+                var key = Encoding.UTF8.GetBytes(_configuration.GetSection("AuthenticationSettings:SigningKey").Value);
+
+
                 tokenHandler.ValidateToken(token, new TokenValidationParameters
                 {
                     ValidateIssuer = true,

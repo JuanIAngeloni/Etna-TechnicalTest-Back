@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iwD7Vz8qRKznEzZaBulD2FUb1RCXMf+PV91Dp7j+OV8CK8Bw9bVoE7aCZfuRF50ENJmlLySPxeTdWHAXo48Z1A==",
+  "dgSpecHash": "Cx2q53D3evzKeMvE8E6quW03E06JIzLUCZcAwy6N2poVioY6wrN3BcQ8wU4mxuN3rQW/Cv7dTy4N5rkQ/uygpQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Juani\\Desktop\\Etna-TechnicalTest\\Business\\Etna_Business.csproj",
+  "projectFilePath": "C:\\Users\\Juani\\Desktop\\Task Manager\\Task-Manager-Back\\Business\\TaskManager_Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Juani\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Juani\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.28\\microsoft.aspnetcore.authentication.jwtbearer.6.0.28.nupkg.sha512",

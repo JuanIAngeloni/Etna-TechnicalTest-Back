@@ -5,12 +5,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using Task_Manager;
 
 #nullable disable
 
 namespace Etna_Data.Migrations
 {
-    [DbContext(typeof(EtnaDbContext))]
+    [DbContext(typeof(TaskManagerDbContext))]
     partial class EtnaDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

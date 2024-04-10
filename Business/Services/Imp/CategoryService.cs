@@ -1,17 +1,17 @@
 ﻿using AutoMapper;
-using Etna_Data;
-using Etna_Data.Entities;
-using Etna_Data.Models;
-using gringotts_application.Exceptions;
+using Task_Manager;
+using Task_Manager.Entities;
+using Task_Manager.Models;
+using Task_Manager.Exceptions;
 
-namespace Etna_Business.Services.Imp
+namespace Task_Manager.Services.Imp
 {
     public class CategoryService : ICategoryService
     {
         private readonly IMapper _mapper;
-        private readonly EtnaDbContext _context;
+        private readonly TaskManagerDbContext _context;
 
-        public CategoryService(IMapper mapper, EtnaDbContext context)
+        public CategoryService(IMapper mapper, TaskManagerDbContext context)
         {
             _mapper = mapper;
             _context = context;

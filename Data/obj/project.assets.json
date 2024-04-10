@@ -2017,11 +2017,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Juani\\Desktop\\Etna-TechnicalTest\\Data\\Etna_Data.csproj",
-      "projectName": "Etna_Data",
-      "projectPath": "C:\\Users\\Juani\\Desktop\\Etna-TechnicalTest\\Data\\Etna_Data.csproj",
+      "projectUniqueName": "C:\\Users\\Juani\\Desktop\\Task Manager\\Task-Manager-Back\\Data\\TaskManager_Data.csproj",
+      "projectName": "TaskManager_Data",
+      "projectPath": "C:\\Users\\Juani\\Desktop\\Task Manager\\Task-Manager-Back\\Data\\TaskManager_Data.csproj",
       "packagesPath": "C:\\Users\\Juani\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Juani\\Desktop\\Etna-TechnicalTest\\Data\\obj\\",
+      "outputPath": "C:\\Users\\Juani\\Desktop\\Task Manager\\Task-Manager-Back\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Juani\\AppData\\Roaming\\NuGet\\NuGet.Config",

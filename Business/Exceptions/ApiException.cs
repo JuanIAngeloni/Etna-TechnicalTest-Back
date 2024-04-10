@@ -1,4 +1,4 @@
-﻿namespace gringotts_application.Exceptions
+﻿namespace Task_Manager.Exceptions
 {
     /// <summary>
     /// Represents an exception that can be thrown in the API layer. 

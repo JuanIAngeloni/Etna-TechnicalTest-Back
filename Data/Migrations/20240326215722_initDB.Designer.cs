@@ -6,12 +6,13 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using Task_Manager;
 
 #nullable disable
 
 namespace Etna_Data.Migrations
 {
-    [DbContext(typeof(EtnaDbContext))]
+    [DbContext(typeof(TaskManagerDbContext))]
     [Migration("20240326215722_initDB")]
     partial class initDB
     {

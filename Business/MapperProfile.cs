@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using Etna_Data.Entities;
-using Etna_Data.Models;
+using Task_Manager.Entities;
+using Task_Manager.Models;
 
 
 

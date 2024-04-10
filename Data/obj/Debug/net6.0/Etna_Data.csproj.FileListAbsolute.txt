@@ -13,3 +13,48 @@ C:\Users\Juani\Desktop\Etna-TechnicalTest\Data\obj\Debug\net6.0\refint\Etna_Data
 C:\Users\Juani\Desktop\Etna-TechnicalTest\Data\obj\Debug\net6.0\Etna_Data.pdb
 C:\Users\Juani\Desktop\Etna-TechnicalTest\Data\obj\Debug\net6.0\Etna_Data.genruntimeconfig.cache
 C:\Users\Juani\Desktop\Etna-TechnicalTest\Data\obj\Debug\net6.0\ref\Etna_Data.dll
+C:\Users\Juani\Desktop\Etna-TechnicalTest\EtnaTechnicalTestAPI\Data\bin\Debug\net6.0\Etna_Data.deps.json
+C:\Users\Juani\Desktop\Etna-TechnicalTest\EtnaTechnicalTestAPI\Data\bin\Debug\net6.0\Etna_Data.runtimeconfig.json
+C:\Users\Juani\Desktop\Etna-TechnicalTest\EtnaTechnicalTestAPI\Data\bin\Debug\net6.0\Etna_Data.dll
+C:\Users\Juani\Desktop\Etna-TechnicalTest\EtnaTechnicalTestAPI\Data\bin\Debug\net6.0\Etna_Data.pdb
+C:\Users\Juani\Desktop\Etna-TechnicalTest\EtnaTechnicalTestAPI\Data\obj\Debug\net6.0\Etna_Data.csproj.AssemblyReference.cache
+C:\Users\Juani\Desktop\Etna-TechnicalTest\EtnaTechnicalTestAPI\Data\obj\Debug\net6.0\Etna_Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Juani\Desktop\Etna-TechnicalTest\EtnaTechnicalTestAPI\Data\obj\Debug\net6.0\Etna_Data.AssemblyInfoInputs.cache
+C:\Users\Juani\Desktop\Etna-TechnicalTest\EtnaTechnicalTestAPI\Data\obj\Debug\net6.0\Etna_Data.AssemblyInfo.cs
+C:\Users\Juani\Desktop\Etna-TechnicalTest\EtnaTechnicalTestAPI\Data\obj\Debug\net6.0\Etna_Data.csproj.CoreCompileInputs.cache
+C:\Users\Juani\Desktop\Etna-TechnicalTest\EtnaTechnicalTestAPI\Data\obj\Debug\net6.0\Etna_Data.sourcelink.json
+C:\Users\Juani\Desktop\Etna-TechnicalTest\EtnaTechnicalTestAPI\Data\obj\Debug\net6.0\Etna_Data.dll
+C:\Users\Juani\Desktop\Etna-TechnicalTest\EtnaTechnicalTestAPI\Data\obj\Debug\net6.0\refint\Etna_Data.dll
+C:\Users\Juani\Desktop\Etna-TechnicalTest\EtnaTechnicalTestAPI\Data\obj\Debug\net6.0\Etna_Data.pdb
+C:\Users\Juani\Desktop\Etna-TechnicalTest\EtnaTechnicalTestAPI\Data\obj\Debug\net6.0\Etna_Data.genruntimeconfig.cache
+C:\Users\Juani\Desktop\Etna-TechnicalTest\EtnaTechnicalTestAPI\Data\obj\Debug\net6.0\ref\Etna_Data.dll
+C:\Users\Juani\Desktop\Etna\EtnaTechnicalTestAPI\Data\bin\Debug\net6.0\Etna_Data.deps.json
+C:\Users\Juani\Desktop\Etna\EtnaTechnicalTestAPI\Data\bin\Debug\net6.0\Etna_Data.runtimeconfig.json
+C:\Users\Juani\Desktop\Etna\EtnaTechnicalTestAPI\Data\bin\Debug\net6.0\Etna_Data.dll
+C:\Users\Juani\Desktop\Etna\EtnaTechnicalTestAPI\Data\bin\Debug\net6.0\Etna_Data.pdb
+C:\Users\Juani\Desktop\Etna\EtnaTechnicalTestAPI\Data\obj\Debug\net6.0\Etna_Data.csproj.AssemblyReference.cache
+C:\Users\Juani\Desktop\Etna\EtnaTechnicalTestAPI\Data\obj\Debug\net6.0\Etna_Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Juani\Desktop\Etna\EtnaTechnicalTestAPI\Data\obj\Debug\net6.0\Etna_Data.AssemblyInfoInputs.cache
+C:\Users\Juani\Desktop\Etna\EtnaTechnicalTestAPI\Data\obj\Debug\net6.0\Etna_Data.AssemblyInfo.cs
+C:\Users\Juani\Desktop\Etna\EtnaTechnicalTestAPI\Data\obj\Debug\net6.0\Etna_Data.csproj.CoreCompileInputs.cache
+C:\Users\Juani\Desktop\Etna\EtnaTechnicalTestAPI\Data\obj\Debug\net6.0\Etna_Data.sourcelink.json
+C:\Users\Juani\Desktop\Etna\EtnaTechnicalTestAPI\Data\obj\Debug\net6.0\Etna_Data.dll
+C:\Users\Juani\Desktop\Etna\EtnaTechnicalTestAPI\Data\obj\Debug\net6.0\refint\Etna_Data.dll
+C:\Users\Juani\Desktop\Etna\EtnaTechnicalTestAPI\Data\obj\Debug\net6.0\Etna_Data.pdb
+C:\Users\Juani\Desktop\Etna\EtnaTechnicalTestAPI\Data\obj\Debug\net6.0\Etna_Data.genruntimeconfig.cache
+C:\Users\Juani\Desktop\Etna\EtnaTechnicalTestAPI\Data\obj\Debug\net6.0\ref\Etna_Data.dll
+C:\Users\Juani\Desktop\Task Manager\Task-Manager-Back\Data\bin\Debug\net6.0\Etna_Data.deps.json
+C:\Users\Juani\Desktop\Task Manager\Task-Manager-Back\Data\bin\Debug\net6.0\Etna_Data.runtimeconfig.json
+C:\Users\Juani\Desktop\Task Manager\Task-Manager-Back\Data\bin\Debug\net6.0\Etna_Data.dll
+C:\Users\Juani\Desktop\Task Manager\Task-Manager-Back\Data\bin\Debug\net6.0\Etna_Data.pdb
+C:\Users\Juani\Desktop\Task Manager\Task-Manager-Back\Data\obj\Debug\net6.0\Etna_Data.csproj.AssemblyReference.cache
+C:\Users\Juani\Desktop\Task Manager\Task-Manager-Back\Data\obj\Debug\net6.0\Etna_Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Juani\Desktop\Task Manager\Task-Manager-Back\Data\obj\Debug\net6.0\Etna_Data.AssemblyInfoInputs.cache
+C:\Users\Juani\Desktop\Task Manager\Task-Manager-Back\Data\obj\Debug\net6.0\Etna_Data.AssemblyInfo.cs
+C:\Users\Juani\Desktop\Task Manager\Task-Manager-Back\Data\obj\Debug\net6.0\Etna_Data.csproj.CoreCompileInputs.cache
+C:\Users\Juani\Desktop\Task Manager\Task-Manager-Back\Data\obj\Debug\net6.0\Etna_Data.sourcelink.json
+C:\Users\Juani\Desktop\Task Manager\Task-Manager-Back\Data\obj\Debug\net6.0\Etna_Data.dll
+C:\Users\Juani\Desktop\Task Manager\Task-Manager-Back\Data\obj\Debug\net6.0\refint\Etna_Data.dll
+C:\Users\Juani\Desktop\Task Manager\Task-Manager-Back\Data\obj\Debug\net6.0\Etna_Data.pdb
+C:\Users\Juani\Desktop\Task Manager\Task-Manager-Back\Data\obj\Debug\net6.0\Etna_Data.genruntimeconfig.cache
+C:\Users\Juani\Desktop\Task Manager\Task-Manager-Back\Data\obj\Debug\net6.0\ref\Etna_Data.dll

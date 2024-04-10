@@ -1,19 +1,18 @@
 ﻿using AutoMapper;
-using Etna_Data;
-using Etna_Data.Entities;
-using Etna_Data.Models;
-using gringotts_application.Exceptions;
+using Task_Manager.Entities;
+using Task_Manager.Models;
+using Task_Manager.Exceptions;
 using System.Text.RegularExpressions;
 
 
-namespace Etna_Business.Services.Imp
+namespace Task_Manager.Services.Imp
 {
     public class UserService : IUserService
     {
         private readonly IMapper _mapper;
-        private readonly EtnaDbContext _context;
+        private readonly TaskManagerDbContext _context;
         private readonly IAuthService _authService;
-        public UserService(IMapper mapper, EtnaDbContext context, IAuthService authService)
+        public UserService(IMapper mapper, TaskManagerDbContext context, IAuthService authService)
         {
             _mapper = mapper;
             _context = context;
@@ -35,6 +34,11 @@ namespace Etna_Business.Services.Imp
                     throw new ApiException(msg);
                 }
 
+                if (await _context.SearchEqualEmails(userRegister.email)) {
+                    var msg = "Ya existe una cuenta registrada con este email.";
+                    throw new ApiException(msg,409);
+                }
+
                 IsValidPassword(userRegister.password);
 
 
@@ -47,7 +51,7 @@ namespace Etna_Business.Services.Imp
             }
             catch (Exception ex)
             {
-                throw new ApiException($"Error while registering the user: {ex.Message}");
+                throw new ApiException($"{ex.Message}");
             }
         }
 

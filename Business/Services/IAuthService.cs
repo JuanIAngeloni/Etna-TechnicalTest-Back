@@ -1,7 +1,7 @@
 ﻿
-using Etna_Data.Models;
+using Task_Manager.Models;
 
-namespace Etna_Business.Services
+namespace Task_Manager.Services
 {
     public interface IAuthService
     {
